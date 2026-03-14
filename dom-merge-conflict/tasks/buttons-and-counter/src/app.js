@@ -25,6 +25,10 @@ export function App() {
   const counter = body.querySelector("#counter");
   button.addEventListener("click", () => {
     increment(counter);
+
+    const decrementButton = document.createElement("button");
+    decrementButton.textContent = "Decrement";
+    main.appendChild(decrementButton);  
   });
 
   return body;
